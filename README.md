@@ -2,7 +2,7 @@
 
 **Défi officiel du [Hackathon 2026 de l'Assemblée nationale](https://hackathon2026.assemblee-nationale.fr/defis/32c39148-b460-4e6a-9616-ec8a59ed4c53)** — qui invente les mots de la politique, qui les reprend, et que deviennent-ils ?
 
-À partir de l'API de transcription de l'Assemblée nationale publiée pour le hackathon, nous avons parcouru **l'intégralité des débats transcrits** — 8 957 séances (séances publiques, commissions, questions au gouvernement), 114 millions de mots, juin 2017 → juillet 2026 — pour retracer la **naissance**, la **diffusion** (au sein d'un groupe, puis entre groupes) et la **mort** de 25 formules politiques.
+À partir de l'API de transcription que Polyfact a construite sur les données publiques de l'Assemblée nationale (vidéos des débats) et mise à disposition du hackathon, nous avons parcouru **l'intégralité des débats transcrits** — 8 957 séances (séances publiques, commissions, questions au gouvernement), 114 millions de mots, juin 2017 → juillet 2026 — pour retracer la **naissance**, la **diffusion** (au sein d'un groupe, puis entre groupes) et la **mort** de 25 formules politiques.
 
 **➡ L'étude complète, interactive et bilingue : [polyfact.com/recherche](https://polyfact.com/recherche)**
 
@@ -25,7 +25,7 @@
 
 ## Méthode (résumé)
 
-1. **Moisson intégrale** (`code/harvest.py`) — l'index des séances puis chaque compte rendu via l'API du hackathon (la recherche de l'API est plafonnée à 500 résultats : pour des séries temporelles honnêtes, il faut tout télécharger), plus le miroir brut pour l'attribution des orateurs non confirmés.
+1. **Moisson intégrale** (`code/harvest.py`) — l'index des séances puis chaque compte rendu via notre API de transcription (la recherche de l'API est plafonnée à 500 résultats : pour des séries temporelles honnêtes, il faut tout télécharger), plus le miroir brut pour l'attribution des orateurs non confirmés.
 2. **Extraction littérale auditée** (`code/extract.py`, lexique dans `code/config/subjects.json`) — variantes orthographiques et flexions sur texte normalisé, exclusions de contextes hors-sujet ; faux positifs audités sur échantillons, formule par formule (`data/audits.json`).
 3. **Groupes à la date de séance** (`code/an_groups.py`) — résolution (uid AN, date) → groupe via les mandats officiels AMO (data.assemblee-nationale.fr) ; un élu qui change de groupe est compté où il siège.
 4. **Des taux, pas des comptes** (`code/aggregate.py`) — occurrences par million de mots prononcés ; le volume transcrit triple entre 2018 et 2025.

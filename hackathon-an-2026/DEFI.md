@@ -10,7 +10,7 @@ Choisir un ou plusieurs éléments de langage et observer leur propagation au se
 Polyfact (Jules Potel)
 
 ### Description longue
-Qui invente les mots de la politique, qui les reprend, et que deviennent-ils ? À partir de l'**API de transcription de l'Assemblée nationale publiée pour le hackathon**, nous avons parcouru l'intégralité des débats transcrits — **8 957 séances** (séances publiques, commissions, questions au gouvernement), soit **114 millions de mots** horodatés et attribués à leur orateur, de juin 2017 à juillet 2026 — pour retracer le cycle de vie complet de **25 formules politiques** : leur naissance publique, leur entrée à l'Assemblée, leur diffusion de groupe en groupe et leur mort — ou leur fossilisation.
+Qui invente les mots de la politique, qui les reprend, et que deviennent-ils ? À partir de l'**API de transcription que Polyfact a construite à partir des données publiques de l'Assemblée nationale** (vidéos des débats) et mise à disposition pour le hackathon, nous avons parcouru l'intégralité des débats transcrits — **8 957 séances** (séances publiques, commissions, questions au gouvernement), soit **114 millions de mots** horodatés et attribués à leur orateur, de juin 2017 à juillet 2026 — pour retracer le cycle de vie complet de **25 formules politiques** : leur naissance publique, leur entrée à l'Assemblée, leur diffusion de groupe en groupe et leur mort — ou leur fossilisation.
 
 **Méthode.** Recherche littérale de chaque formule (variantes orthographiques et flexions, exclusions de contextes hors-sujet), avec **audit des faux positifs** sur échantillons, formule par formule ; rattachement de chaque orateur à son **groupe politique à la date de la séance** via les mandats officiels (données ouvertes AMO), ce qui suit correctement les élus qui changent de groupe ; usages exprimés en **occurrences par million de mots prononcés** (le volume transcrit triple entre 2018 et 2025, les comptes bruts sont trompeurs) ; chaque affirmation **contre-vérifiée dans les données** (dates, attributions, comptages).
 
@@ -58,7 +58,7 @@ Cochez les ressources utilisées en remplaçant `[ ]` par `[x]`.
 - [ ] `legiwatch-database-parlement` — Base de données Parlement ✺ LegiWatch
 - [ ] `legiwatch-serveur-mcp-parlement` — Serveur MCP Parlement ✺ LegiWatch
 
-Ressource principale hors liste : **l'API de transcription de l'Assemblée nationale créée pour le hackathon** (séances publiques + commissions 2017-2026, orateurs identifiés et rattachés à leur groupe), exploitée intégralement.
+Ressource principale hors liste : **l'API de transcription construite par Polyfact à partir des données publiques de l'Assemblée nationale** (vidéos des séances publiques et commissions 2017-2026, orateurs identifiés et rattachés à leur groupe), mise à disposition des participants du hackathon et exploitée intégralement.
 
 ### Galerie
 - [Image 1](images/image-1.png)
