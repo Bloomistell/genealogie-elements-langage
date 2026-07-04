@@ -1,0 +1,177 @@
+[
+  {
+    "subject_key": "covid-etat-protecteur",
+    "phrase_key": "quoi-qu-il-en-coute",
+    "total": 474,
+    "first": "2018-07-18",
+    "last": "2026-07-01"
+  },
+  {
+    "subject_key": "covid-etat-protecteur",
+    "phrase_key": "argent-magique",
+    "total": 106,
+    "first": "2020-02-10",
+    "last": "2026-07-01"
+  },
+  {
+    "subject_key": "covid-etat-protecteur",
+    "phrase_key": "monde-d-apres",
+    "total": 90,
+    "first": "2019-12-11",
+    "last": "2026-06-09"
+  },
+  {
+    "subject_key": "covid-etat-protecteur",
+    "phrase_key": "nous-sommes-en-guerre",
+    "total": 30,
+    "first": "2017-10-11",
+    "last": "2026-03-26"
+  },
+  {
+    "subject_key": "covid-etat-protecteur",
+    "phrase_key": "premiers-de-cordee",
+    "total": 29,
+    "first": "2017-10-17",
+    "last": "2026-05-27"
+  },
+  {
+    "subject_key": "covid-etat-protecteur",
+    "phrase_key": "jours-heureux",
+    "total": 28,
+    "first": "2018-04-04",
+    "last": "2026-06-09"
+  },
+  {
+    "subject_key": "covid-etat-protecteur",
+    "phrase_key": "premiers-de-corvee",
+    "total": 21,
+    "first": "2020-04-22",
+    "last": "2025-05-21"
+  },
+  {
+    "subject_key": "covid-etat-protecteur",
+    "phrase_key": "emmerder-les-non-vaccines",
+    "total": 10,
+    "first": "2022-01-04",
+    "last": "2025-01-28"
+  },
+  {
+    "subject_key": "ecologie-planification",
+    "phrase_key": "transition-ecologique",
+    "total": 7559,
+    "first": "2017-07-04",
+    "last": "2026-07-02"
+  },
+  {
+    "subject_key": "ecologie-planification",
+    "phrase_key": "planification-ecologique",
+    "total": 1001,
+    "first": "2017-07-05",
+    "last": "2026-07-01"
+  },
+  {
+    "subject_key": "ecologie-planification",
+    "phrase_key": "sobriete-energetique",
+    "total": 403,
+    "first": "2018-03-07",
+    "last": "2026-07-01"
+  },
+  {
+    "subject_key": "ecologie-planification",
+    "phrase_key": "ecocide",
+    "total": 316,
+    "first": "2017-10-03",
+    "last": "2026-06-24"
+  },
+  {
+    "subject_key": "ecologie-planification",
+    "phrase_key": "ecologie-punitive",
+    "total": 264,
+    "first": "2017-07-25",
+    "last": "2026-07-01"
+  },
+  {
+    "subject_key": "ecologie-planification",
+    "phrase_key": "ecoterrorisme",
+    "total": 50,
+    "first": "2022-11-02",
+    "last": "2026-06-30"
+  },
+  {
+    "subject_key": "ecologie-planification",
+    "phrase_key": "pause-reglementaire",
+    "total": 23,
+    "first": "2017-09-27",
+    "last": "2026-02-04"
+  },
+  {
+    "subject_key": "ecologie-planification",
+    "phrase_key": "fin-de-l-abondance",
+    "total": 15,
+    "first": "2022-09-26",
+    "last": "2026-05-04"
+  },
+  {
+    "subject_key": "ecologie-planification",
+    "phrase_key": "fin-du-mois-fin-du-monde",
+    "total": 14,
+    "first": "2019-04-09",
+    "last": "2026-05-12"
+  },
+  {
+    "subject_key": "securite-identite",
+    "phrase_key": "separatisme",
+    "total": 1263,
+    "first": "2018-01-22",
+    "last": "2026-07-02"
+  },
+  {
+    "subject_key": "securite-identite",
+    "phrase_key": "communautarisme",
+    "total": 459,
+    "first": "2017-07-26",
+    "last": "2026-06-29"
+  },
+  {
+    "subject_key": "securite-identite",
+    "phrase_key": "submersion-migratoire",
+    "total": 204,
+    "first": "2019-09-17",
+    "last": "2026-06-25"
+  },
+  {
+    "subject_key": "securite-identite",
+    "phrase_key": "wokisme",
+    "total": 143,
+    "first": "2021-10-20",
+    "last": "2026-05-21"
+  },
+  {
+    "subject_key": "securite-identite",
+    "phrase_key": "ensauvagement",
+    "total": 96,
+    "first": "2017-10-18",
+    "last": "2026-06-30"
+  },
+  {
+    "subject_key": "securite-identite",
+    "phrase_key": "grand-remplacement",
+    "total": 94,
+    "first": "2019-01-30",
+    "last": "2026-06-25"
+  },
+  {
+    "subject_key": "securite-identite",
+    "phrase_key": "islamo-gauchisme",
+    "total": 85,
+    "first": "2019-09-17",
+    "last": "2026-03-31"
+  },
+  {
+    "subject_key": "securite-identite",
+    "phrase_key": "decivilisation",
+    "total": 19,
+    "first": "2023-03-28",
+    "last": "2026-06-25"
+  }
+]

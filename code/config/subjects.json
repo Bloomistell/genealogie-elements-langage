@@ -1,0 +1,442 @@
+{
+	"_note": "Candidate lexicon covering all 6 researched subjects — the corpus decides the 3 finalists. Patterns are regex fragments matched on NORMALIZED text (lowercase, accents stripped, apostrophes unified to '), wrapped in \\b…\\b by extract.py. 'exclude': a sentence matching any of these is dropped (known false-positive contexts). Birth stories carry the adversarial fact-check corrections (see docs/).",
+	"subjects": [
+		{
+			"key": "covid-etat-protecteur",
+			"title_fr": "Le Covid et l'État protecteur",
+			"storyline": "Mars 2020 : en dix jours, l'exécutif forge un lexique de crise (« quoi qu'il en coûte », « nous sommes en guerre », « les jours heureux », « le monde d'après »). Diffusion massive dans tous les groupes, puis mise à mort officielle (« le quoi qu'il en coûte, c'est fini », Bruno Le Maire, été 2021) — et une vie d'outre-tombe : la formule devient un étalon budgétaire que chacun retourne contre le gouvernement.",
+			"phrases": [
+				{
+					"key": "quoi-qu-il-en-coute",
+					"canonical": "quoi qu'il en coûte",
+					"role": "core",
+					"birth": {
+						"date": "2020-03-12",
+						"author": "Emmanuel Macron",
+						"event": "Allocution télévisée Covid : la formule est prononcée trois fois pour garantir le soutien économique illimité de l'État."
+					},
+					"death_event": {
+						"date": "2021-08-30",
+						"author": "Bruno Le Maire",
+						"event": "« Le quoi qu'il en coûte, c'est fini » (université d'été du Medef)."
+					},
+					"patterns": [
+						"quoi ?qu'il (nous |vous )?en coute(ra)?"
+					]
+				},
+				{
+					"key": "nous-sommes-en-guerre",
+					"canonical": "nous sommes en guerre",
+					"role": "core",
+					"birth": {
+						"date": "2020-03-16",
+						"author": "Emmanuel Macron",
+						"event": "Allocution annonçant le confinement : « nous sommes en guerre » répété six fois."
+					},
+					"patterns": [
+						"nous sommes en guerre",
+						"nous etions en guerre",
+						"guerre sanitaire"
+					],
+					"exclude": [
+						"terrorisme",
+						"ukraine",
+						"russie",
+						"guerre economique",
+						"guerre permanente",
+						"economie de guerre",
+						"\\blibye\\b",
+						"\\biran",
+						"si nous etions en guerre",
+						"signifierait que nous sommes en guerre"
+					]
+				},
+				{
+					"key": "jours-heureux",
+					"canonical": "les jours heureux",
+					"role": "core",
+					"birth": {
+						"date": "2020-04-13",
+						"author": "Emmanuel Macron",
+						"event": "Allocution de prolongation du confinement — écho assumé au programme du CNR (1944)."
+					},
+					"patterns": [
+						"jours heureux"
+					],
+					"exclude": [
+						"librairie",
+						"coul\\w+ des jours heureux"
+					]
+				},
+				{
+					"key": "monde-d-apres",
+					"canonical": "le monde d'après",
+					"role": "core",
+					"birth": {
+						"date": "2020-03-16",
+						"author": "attribution diffuse (exécutif + éditorialistes)",
+						"event": "Naissance distribuée pendant le premier confinement ; « le jour d'après ne sera pas un retour au jour d'avant » (Macron, 16 mars 2020)."
+					},
+					"patterns": [
+						"monde d'apres"
+					]
+				},
+				{
+					"key": "argent-magique",
+					"canonical": "il n'y a pas d'argent magique",
+					"role": "precursor",
+					"birth": {
+						"date": "2018-04-05",
+						"author": "Emmanuel Macron",
+						"event": "Échange avec une soignante au CHU de Rouen — la formule sera retournée contre lui après les milliards du Covid."
+					},
+					"patterns": [
+						"argent magique"
+					]
+				},
+				{
+					"key": "premiers-de-cordee",
+					"canonical": "premiers de cordée",
+					"role": "core",
+					"birth": {
+						"date": "2017-10-15",
+						"author": "Emmanuel Macron",
+						"event": "Première grande interview TV du quinquennat (TF1/LCI) : les « premiers de cordée » justifient la politique de l'offre."
+					},
+					"patterns": [
+						"premier(e?s)? de cordees?"
+					],
+					"exclude": [
+						"association premiers de cordee"
+					]
+				},
+				{
+					"key": "premiers-de-corvee",
+					"canonical": "premiers de corvée",
+					"role": "counter",
+					"birth": {
+						"date": "2017-10-16",
+						"author": "Jean-Luc Mélenchon",
+						"event": "Au 20h de TF1, le lendemain de l'interview de Macron : contre-formule forgée en 24 heures ; seconde vie massive pendant le Covid (caissières, soignants, livreurs)."
+					},
+					"patterns": [
+						"premier(e?s)? de corvees?"
+					]
+				},
+				{
+					"key": "emmerder-les-non-vaccines",
+					"canonical": "emmerder les non-vaccinés",
+					"role": "successor",
+					"birth": {
+						"date": "2022-01-04",
+						"author": "Emmanuel Macron",
+						"event": "Interview au Parisien : « les non-vaccinés, j'ai très envie de les emmerder »."
+					},
+					"patterns": [
+						"emmerder les (non[- ]vaccines|francais)",
+						"envie de les emmerder"
+					],
+					"exclude": [
+						"(arret|cess)\\w*[^.]{0,25}d'emmerder",
+						"pompidou",
+						"a emmerder les francais"
+					]
+				}
+			]
+		},
+		{
+			"key": "securite-identite",
+			"title_fr": "Le lexique sécuritaire et identitaire",
+			"storyline": "La normalisation d'un vocabulaire venu de l'extrême droite et des polémistes : « ensauvagement » (lexique frontiste repris par le ministre de l'Intérieur en 2020), « séparatisme » (cadrage présidentiel devenu loi), « islamo-gauchisme » (relancé par deux ministres), « wokisme », et la mort-née « décivilisation » (Macron, mai 2023) — un mot présidentiel qui ne survit pas à sa première semaine.",
+			"phrases": [
+				{
+					"key": "ensauvagement",
+					"canonical": "ensauvagement",
+					"role": "core",
+					"birth": {
+						"date": "2020-07-24",
+						"author": "Gérald Darmanin",
+						"event": "Interview au Figaro : « Il faut stopper l'ensauvagement d'une partie de la société » — un mot du lexique RN (Le Pen, dès 2013) assumé par un ministre de l'Intérieur."
+					},
+					"patterns": [
+						"ensauvag\\w*"
+					]
+				},
+				{
+					"key": "separatisme",
+					"canonical": "séparatisme",
+					"role": "core",
+					"birth": {
+						"date": "2020-02-18",
+						"author": "Emmanuel Macron",
+						"event": "Discours de Mulhouse : « séparatisme islamiste » remplace « communautarisme » dans le cadrage officiel ; loi « confortant le respect des principes de la République » (2021)."
+					},
+					"patterns": [
+						"separatismes?",
+						"separatistes?"
+					],
+					"exclude": [
+						"corse",
+						"basque",
+						"catalan",
+						"kanak",
+						"caledon",
+						"ecossais",
+						"flamand",
+						"espagn",
+						"quebec",
+						"irland",
+						"tchetchen",
+						"biafr",
+						"taiwan",
+						"ouighour",
+						"ouigour",
+						"tibet",
+						"donbass",
+						"donetsk",
+						"lougansk",
+						"louhansk",
+						"crimee",
+						"pro-?russes?",
+						"kurd",
+						"kosovo",
+						"ukrain"
+					]
+				},
+				{
+					"key": "communautarisme",
+					"canonical": "communautarisme",
+					"role": "precursor",
+					"birth": {
+						"date": "1989-10-01",
+						"author": "(usage diffus)",
+						"event": "Le prédécesseur officiel de « séparatisme » — utile pour voir la substitution de cadrage en 2020."
+					},
+					"patterns": [
+						"communautaris(me|mes|te|tes)",
+						"repli communautaire"
+					]
+				},
+				{
+					"key": "islamo-gauchisme",
+					"canonical": "islamo-gauchisme",
+					"role": "core",
+					"birth": {
+						"date": "2020-10-22",
+						"author": "Jean-Michel Blanquer",
+						"event": "« L'islamo-gauchisme fait des ravages à l'université » (Europe 1, après l'assassinat de Samuel Paty) ; relancé par Frédérique Vidal en février 2021 (enquête CNRS demandée). Pré-histoire : Valls dès 2016 ; concept forgé par P.-A. Taguieff (2002)."
+					},
+					"patterns": [
+						"islamo[- ]?gauchis(me|mes|te|tes)"
+					]
+				},
+				{
+					"key": "wokisme",
+					"canonical": "wokisme",
+					"role": "core",
+					"birth": {
+						"date": "2021-07-19",
+						"author": "Jean-Michel Blanquer",
+						"event": "Annonce du « laboratoire de la République » contre le « wokisme » (L'Opinion, 19 juillet 2021) ; institutionnalisation au colloque d'octobre 2021."
+					},
+					"patterns": [
+						"wokis(me|mes|te|tes|ation)",
+						"anti[- ]?woke",
+						"woke"
+					]
+				},
+				{
+					"key": "decivilisation",
+					"canonical": "décivilisation",
+					"role": "core",
+					"birth": {
+						"date": "2023-05-24",
+						"author": "Emmanuel Macron",
+						"event": "En Conseil des ministres, après les meurtres de trois policiers et d'une infirmière : « contrer ce processus de décivilisation ». Tollé (le mot évoque Renaud Camus) — la formule est abandonnée en quelques jours."
+					},
+					"patterns": [
+						"decivilis\\w*"
+					]
+				},
+				{
+					"key": "grand-remplacement",
+					"canonical": "grand remplacement",
+					"role": "core",
+					"birth": {
+						"date": "2010-11-26",
+						"author": "Renaud Camus",
+						"event": "Conférence de Lunel ; lancé en politique nationale par Zemmour (2021). Tabou dans l'hémicycle — qui le prononce, et pour quoi faire ?"
+					},
+					"patterns": [
+						"grands? remplacements?",
+						"remplacis(me|te|tes)"
+					]
+				},
+				{
+					"key": "submersion-migratoire",
+					"canonical": "submersion migratoire",
+					"role": "core",
+					"birth": {
+						"date": "2023-12-01",
+						"author": "RN (hémicycle) ; lexique frontiste depuis les années 1980",
+						"event": "Dans les débats AN de la loi immigration (J.-P. Tanguy) ; franchit la ligne exécutive avec François Bayrou : « sentiment de submersion » (LCI, 27 janvier 2025, puis QAG)."
+					},
+					"capture_event": {
+						"date": "2025-01-27",
+						"author": "François Bayrou",
+						"event": "Le Premier ministre reprend « submersion » — banalisation exécutive d'un mot d'extrême droite."
+					},
+					"patterns": [
+						"submersions? (migratoires?|demographiques?)",
+						"sentiment de submersion",
+						"submerge(e|s|es)? par l'immigration"
+					],
+					"exclude": [
+						"sentiment de submersion qui en resulte"
+					]
+				}
+			]
+		},
+		{
+			"key": "ecologie-planification",
+			"title_fr": "La bataille du vocabulaire écologique",
+			"storyline": "« Planification écologique » naît à gauche (Mélenchon, dès 2008-2010, programme LFI 2017), vit dix ans comme marqueur insoumis, puis est capturée par Emmanuel Macron entre les deux tours de 2022 et institutionnalisée (SGPE). En face, la contre-offensive lexicale : « écologie punitive », « écoterrorisme », « pause réglementaire ». Et deux formules de crise : « sobriété énergétique » (doctrine d'État, automne 2022) et « fin du mois / fin du monde » (2018).",
+			"phrases": [
+				{
+					"key": "planification-ecologique",
+					"canonical": "planification écologique",
+					"role": "core",
+					"birth": {
+						"date": "2008-11-01",
+						"author": "Jean-Luc Mélenchon",
+						"event": "Théorisée au Parti de Gauche (2008-2010), au programme de LFI dès 2017 ; capturée par Macron le 16 avril 2022 à Marseille (« la politique que je mènerai … sera la planification écologique »)."
+					},
+					"capture_event": {
+						"date": "2022-04-16",
+						"author": "Emmanuel Macron",
+						"event": "Meeting de Marseille, entre les deux tours : capture assumée de la formule mélenchoniste ; création du SGPE en juillet 2022."
+					},
+					"patterns": [
+						"planifications? ecologiques?",
+						"planifier la transition ecologique"
+					]
+				},
+				{
+					"key": "sobriete-energetique",
+					"canonical": "sobriété énergétique",
+					"role": "core",
+					"birth": {
+						"date": "2022-10-06",
+						"author": "Gouvernement Borne",
+						"event": "Plan de sobriété énergétique présenté après l'invasion de l'Ukraine — « sobriété » passe de l'écologie militante à la doctrine d'État."
+					},
+					"patterns": [
+						"sobrietes? energetiques?",
+						"plans? de sobriete",
+						"sobriete (choisie|subie)"
+					]
+				},
+				{
+					"key": "fin-du-mois-fin-du-monde",
+					"canonical": "fin du mois / fin du monde",
+					"role": "core",
+					"birth": {
+						"date": "2018-11-22",
+						"author": "popularisée pendant les gilets jaunes",
+						"event": "« Fin du monde, fin du mois, même combat » — slogan aux racines écolo-syndicales (années 1970), devenu l'axe du débat écologie/pouvoir d'achat fin 2018."
+					},
+					"patterns": [
+						"fins? d[eu] mois.{0,100}fin du monde",
+						"fin du monde.{0,100}fins? d[eu] mois"
+					]
+				},
+				{
+					"key": "ecologie-punitive",
+					"canonical": "écologie punitive",
+					"role": "counter",
+					"birth": {
+						"date": "2008-03-01",
+						"author": "droite/centre (généalogie ancienne)",
+						"event": "Attesté dès 2008 ; popularisé par Ségolène Royal en 2014 (« l'écologie punitive »), devenu l'arme anti-normes de la droite."
+					},
+					"patterns": [
+						"ecologie (non[- ]?punitive|punitive|de la punition)",
+						"ecologie qui ne soit pas punitive",
+						"sobriete punitive"
+					]
+				},
+				{
+					"key": "ecocide",
+					"canonical": "écocide",
+					"role": "core",
+					"birth": {
+						"date": "2020-06-21",
+						"author": "Convention citoyenne pour le climat",
+						"event": "La CCC vote la création d'un « crime d'écocide » ; le gouvernement le rétrograde en « délit » dans la loi Climat 2021."
+					},
+					"patterns": [
+						"ecocides?"
+					]
+				},
+				{
+					"key": "ecoterrorisme",
+					"canonical": "écoterrorisme",
+					"role": "counter",
+					"birth": {
+						"date": "2022-10-30",
+						"author": "Gérald Darmanin",
+						"event": "Au lendemain de Sainte-Soline : « l'écoterrorisme » pour qualifier les opposants aux mégabassines."
+					},
+					"patterns": [
+						"eco[- ]?terroris(me|mes|te|tes)"
+					]
+				},
+				{
+					"key": "pause-reglementaire",
+					"canonical": "pause réglementaire",
+					"role": "counter",
+					"birth": {
+						"date": "2023-05-11",
+						"author": "Emmanuel Macron",
+						"event": "Devant des industriels : demande d'une « pause réglementaire européenne » sur les normes environnementales."
+					},
+					"patterns": [
+						"pause (reglementaire|normative|environnementale)",
+						"pause dans les normes"
+					],
+					"exclude": [
+						"temps de pause"
+					]
+				},
+				{
+					"key": "fin-de-l-abondance",
+					"canonical": "fin de l'abondance",
+					"role": "successor",
+					"birth": {
+						"date": "2022-08-24",
+						"author": "Emmanuel Macron",
+						"event": "Conseil des ministres de rentrée : « la fin de l'abondance et de l'insouciance » — bascule du quoi qu'il en coûte vers l'austérité."
+					},
+					"patterns": [
+						"fin de l'abondance",
+						"fin de l'insouciance",
+						"l'abondance et (de )?l'insouciance"
+					]
+				},
+				{
+					"key": "transition-ecologique",
+					"canonical": "transition écologique",
+					"role": "baseline",
+					"birth": {
+						"date": "2017-05-17",
+						"author": "(vocabulaire installé)",
+						"event": "Étalon de fond : le terme consensuel que les formules marquées viennent concurrencer. Nom du ministère — les mentions du titre ministériel sont exclues."
+					},
+					"patterns": [
+						"(?<!ministre de la )(?<!ministere de la )(?<!agence de la )(?<!conseil national de la )(?<!conseil national pour la )transitions? ecologiques?"
+					]
+				}
+			]
+		}
+	]
+}

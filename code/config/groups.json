@@ -1,0 +1,21 @@
+{
+	"_note": "Normalizes party_name (which varies across legislatures, including registry typos) into stable families and blocs. Patterns are matched on the lowercased, accent-stripped party_name; first match wins; fallback family = 'autres'.",
+	"families": [
+		{ "family": "Renaissance", "bloc": "majorité", "patterns": ["renaissance", "republique en marche", "ensemble pour la republique", "larem"] },
+		{ "family": "MoDem", "bloc": "majorité", "patterns": ["modem", "mouvement democrate", "les democrates"] },
+		{ "family": "Horizons", "bloc": "majorité", "patterns": ["horizons"] },
+		{ "family": "UDI / Agir", "bloc": "majorité", "patterns": ["udi", "agir ensemble", "les constructifs"] },
+		{ "family": "LFI", "bloc": "gauche", "patterns": ["france insoumise"] },
+		{ "family": "Socialistes", "bloc": "gauche", "patterns": ["socialistes", "nouvelle gauche"] },
+		{ "family": "Écologistes", "bloc": "gauche", "patterns": ["ecologiste", "verts"] },
+		{ "family": "GDR / Communistes", "bloc": "gauche", "patterns": ["communiste", "gauche democrate et republicaine"] },
+		{ "family": "LR", "bloc": "droite", "patterns": ["les republicains", "les recuplicains", "droite republicaine"] },
+		{ "family": "RN", "bloc": "droite nationale", "patterns": ["rassemblement national"] },
+		{ "family": "UDR", "bloc": "droite nationale", "patterns": ["union des droites", "a droite", "udr"] },
+		{ "family": "LIOT", "bloc": "autres", "patterns": ["outre-mer et territoires", "libertes, independants", "libertes et territoires"] },
+		{ "family": "Non inscrits", "bloc": "autres", "patterns": ["non inscrit", "n'appartenant a aucun groupe"] },
+		{ "family": "Gouvernement", "bloc": "exécutif", "patterns": ["gouvernement"] },
+		{ "family": "Autres", "bloc": "autres", "patterns": ["les independants", "union centriste", "rassemblement democratique", "europe - "] }
+	],
+	"unattributed": ["(non identifié)", "(sans groupe)", "?"]
+}

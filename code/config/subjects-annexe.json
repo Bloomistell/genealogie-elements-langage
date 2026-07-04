@@ -1,0 +1,310 @@
+{
+	"_note": "Sujets candidats non retenus (économie de l'offre, immigration, institutions) — auditables via extract.py en pointant CONFIG_PATH ici. Verdicts d'audit dans output/audits.json.",
+	"subjects": [
+		{
+			"key": "immigration-cadrage",
+			"title_fr": "Les cadrages de l'immigration",
+			"storyline": "Des métaphores hydrauliques (« appel d'air », « submersion migratoire ») à la banalisation d'un lexique d'extrême droite : « submersion » passe du RN (hémicycle dès 2023) au Premier ministre Bayrou (janvier 2025) ; « OQTF » devient un argument politique après l'affaire Lola (2022) ; en face, « délit de solidarité » et « principe de fraternité » (Conseil constitutionnel, 2018).",
+			"phrases": [
+				{
+					"key": "appel-d-air",
+					"canonical": "appel d'air",
+					"role": "baseline",
+					"birth": {
+						"date": "2017-06-23",
+						"author": "Gérard Collomb",
+						"event": "À Calais : « à chaque fois qu'on a considéré avec humanité les problèmes, ça a créé un appel d'air »."
+					},
+					"patterns": [
+						"appels? d'air",
+						"effets? d'appel"
+					]
+				},
+				{
+					"key": "oqtf",
+					"canonical": "OQTF",
+					"role": "core",
+					"birth": {
+						"date": "2022-10-18",
+						"author": "LR/RN aux QAG (création légale : 2006)",
+						"event": "Après le meurtre de Lola, l'acronyme administratif (loi 2006) devient un argument politique central sur l'« inexécution » des éloignements."
+					},
+					"patterns": [
+						"oqtf",
+						"obligations? de quitter le territoire"
+					]
+				},
+				{
+					"key": "metiers-en-tension",
+					"canonical": "métiers en tension",
+					"role": "counter",
+					"birth": {
+						"date": "2022-11-02",
+						"author": "Gérald Darmanin & Olivier Dussopt",
+						"event": "Interview au Monde : le titre de séjour « métiers en tension », cadrage économique de la régularisation (loi immigration 2023)."
+					},
+					"patterns": [
+						"metiers? en tension"
+					]
+				},
+				{
+					"key": "delit-de-solidarite",
+					"canonical": "délit de solidarité",
+					"role": "counter",
+					"birth": {
+						"date": "2017-08-01",
+						"author": "milieu associatif (GISTI)",
+						"event": "Campagne contre la pénalisation de l'aide aux migrants (affaire Cédric Herrou) — contre-cadrage de gauche."
+					},
+					"patterns": [
+						"delits? de solidarite",
+						"delinquants (solidaires|de la solidarite)"
+					]
+				},
+				{
+					"key": "principe-de-fraternite",
+					"canonical": "principe de fraternité",
+					"role": "counter",
+					"birth": {
+						"date": "2018-07-06",
+						"author": "Conseil constitutionnel",
+						"event": "Décision n° 2018-717/718 QPC : la fraternité devient un principe à valeur constitutionnelle (liberté d'aider autrui)."
+					},
+					"patterns": [
+						"principe (constitutionnel )?de fraternite",
+						"valeur constitutionnelle de la fraternite"
+					]
+				},
+				{
+					"key": "remigration",
+					"canonical": "remigration",
+					"role": "successor",
+					"birth": {
+						"date": "2022-03-22",
+						"author": "Éric Zemmour",
+						"event": "Proposition d'un « ministère de la remigration » (conférence de presse, Maison de la Chimie)."
+					},
+					"patterns": [
+						"remigrations?"
+					]
+				}
+			]
+		},
+		{
+			"key": "economie-effort",
+			"title_fr": "L'économie de l'offre et ses formules",
+			"storyline": "Le lexique macroniste première manière (« premiers de cordée », « start-up nation », « traverser la rue », « pognon de dingue », « argent magique ») et ses retournements : la gauche forge « premiers de corvée » en 24 heures, « théorie du ruissellement » ne vit que dans la bouche de ses adversaires ; puis les formules d'austérité (« fin de l'abondance », 2022) et le « réarmement » décliné à tout (2024).",
+			"phrases": [
+				{
+					"key": "theorie-du-ruissellement",
+					"canonical": "théorie du ruissellement",
+					"role": "counter",
+					"birth": {
+						"date": "2017-10-15",
+						"author": "adversaires d'Emmanuel Macron",
+						"event": "Calque de trickle-down economics : une théorie que seuls ses adversaires invoquent — Macron n'a jamais revendiqué le mot."
+					},
+					"patterns": [
+						"(theories?|theoremes?|politiques?|mythes?|dogmes?|fables?) du ruissellement",
+						"crois\\w* (pas |plus |guere )?au ruissellement",
+						"ruissellement des richesses",
+						"fameux ruissellement"
+					]
+				},
+				{
+					"key": "start-up-nation",
+					"canonical": "start-up nation",
+					"role": "core",
+					"birth": {
+						"date": "2017-04-13",
+						"author": "Emmanuel Macron",
+						"event": "Slogan de campagne puis d'investiture (VivaTech, juin 2017) — emprunté au livre « Start-up Nation » (2009) sur Israël."
+					},
+					"patterns": [
+						"start[- ]?up nations?",
+						"nation start[- ]?up"
+					]
+				},
+				{
+					"key": "traverser-la-rue",
+					"canonical": "traverser la rue",
+					"role": "core",
+					"birth": {
+						"date": "2018-09-15",
+						"author": "Emmanuel Macron",
+						"event": "À un jeune horticulteur au chômage : « je traverse la rue, je vous en trouve » — devenu le symbole du « mépris d'en haut » retourné par les oppositions."
+					},
+					"patterns": [
+						"travers\\w* la rue.{0,80}(travail|emploi|boulot|trouve)",
+						"suffit de traverser la rue",
+						"je traverse la rue, je vous"
+					]
+				},
+				{
+					"key": "pognon-de-dingue",
+					"canonical": "pognon de dingue",
+					"role": "core",
+					"birth": {
+						"date": "2018-06-12",
+						"author": "Emmanuel Macron",
+						"event": "Vidéo de préparation du discours au congrès de Versailles : « on met un pognon de dingue dans des minima sociaux »."
+					},
+					"patterns": [
+						"pognon de dingue"
+					]
+				},
+				{
+					"key": "rearmement",
+					"canonical": "réarmement (démographique, civique…)",
+					"role": "successor",
+					"birth": {
+						"date": "2024-01-16",
+						"author": "Emmanuel Macron",
+						"event": "Conférence de presse : « réarmement démographique », civique, industriel… — le lexique martial appliqué à tout (les vœux du 31 décembre parlaient de « réarmement » général)."
+					},
+					"patterns": [
+						"rearmement (demographique|civique|industriel|economique|scientifique|technologique|productif|budgetaire|regalien|moral)",
+						"rearmement de (l'etat|la nation|nos services publics)",
+						"rearmer (la nation|le pays|la france)"
+					]
+				},
+				{
+					"key": "politique-de-l-offre",
+					"canonical": "politique de l'offre",
+					"role": "baseline",
+					"birth": {
+						"date": "2014-01-14",
+						"author": "(terme des années 1980 ; consécration Hollande 2014)",
+						"event": "Étalon technique du débat économique — le fond sur lequel les formules marquées se détachent."
+					},
+					"patterns": [
+						"politiques? de l'offre",
+						"economie de l'offre",
+						"chocs? d'offre",
+						"chocs? de l'offre"
+					],
+					"exclude": [
+						"offre de soins",
+						"offre de logement",
+						"offre de formation",
+						"offre de transport"
+					]
+				}
+			]
+		},
+		{
+			"key": "institutions-democratie",
+			"title_fr": "La crise démocratique et ses mots",
+			"storyline": "Autour des retraites 2023 et de la dissolution 2024 : « déni de démocratie » (oppositions) contre « bordélisation » (exécutif) ; « arc républicain » comme machine à exclure ; « socle commun » comme euphémisme de coalition ; et la contestation de l'« État de droit » (Retailleau, 2024) répondue par « tyrannie des juges » (RN, 2025).",
+			"phrases": [
+				{
+					"key": "deni-de-democratie",
+					"canonical": "déni de démocratie",
+					"role": "core",
+					"birth": {
+						"date": "2023-03-16",
+						"author": "intersyndicale et oppositions",
+						"event": "Le 49.3 sur la réforme des retraites fait exploser la formule."
+					},
+					"patterns": [
+						"denis? de (la )?democratie",
+						"deni democratique"
+					]
+				},
+				{
+					"key": "bordelisation",
+					"canonical": "bordélisation",
+					"role": "counter",
+					"birth": {
+						"date": "2023-01-28",
+						"author": "Gérald Darmanin",
+						"event": "« La gauche bordélise l'Assemblée » — le néologisme anti-LFI de l'exécutif."
+					},
+					"patterns": [
+						"bordelis\\w*"
+					]
+				},
+				{
+					"key": "arc-republicain",
+					"canonical": "arc républicain",
+					"role": "core",
+					"birth": {
+						"date": "2023-07-04",
+						"author": "Élisabeth Borne (relance)",
+						"event": "Qui est dedans, qui est dehors : la frontière mouvante de la respectabilité politique."
+					},
+					"patterns": [
+						"arcs? republicains?"
+					]
+				},
+				{
+					"key": "socle-commun",
+					"canonical": "socle commun",
+					"role": "successor",
+					"birth": {
+						"date": "2024-08-29",
+						"author": "Édouard Philippe puis exécutif",
+						"event": "Après la dissolution : l'euphémisme de la coalition sans majorité (à distinguer du « socle commun » scolaire, exclu du comptage)."
+					},
+					"patterns": [
+						"socles? communs?"
+					],
+					"exclude": [
+						"connaissances",
+						"competences",
+						"culture",
+						"scolaire",
+						"ecole",
+						"college"
+					]
+				},
+				{
+					"key": "etat-de-droit-conteste",
+					"canonical": "l'État de droit n'est pas intangible",
+					"role": "core",
+					"birth": {
+						"date": "2024-09-29",
+						"author": "Bruno Retailleau",
+						"event": "« L'État de droit, ce n'est pas intangible ni sacré » (JDD) — un ministre de l'Intérieur relativise le cadre juridique."
+					},
+					"patterns": [
+						"etat de droit[^.]{0,40}(intangible|sacre)",
+						"ni intangible,? ni sacre",
+						"pas intangible"
+					]
+				},
+				{
+					"key": "tyrannie-des-juges",
+					"canonical": "tyrannie des juges",
+					"role": "successor",
+					"birth": {
+						"date": "2025-03-31",
+						"author": "Jordan Bardella",
+						"event": "Après la condamnation de Marine Le Pen : escalade contre l'autorité judiciaire (« gouvernement des juges » est plus ancien — Lambert, 1921)."
+					},
+					"patterns": [
+						"(tyrannie|dictature|republique) des juges",
+						"gouvernement des juges",
+						"tyrannie judiciaire"
+					]
+				},
+				{
+					"key": "passage-en-force",
+					"canonical": "passage en force",
+					"role": "baseline",
+					"birth": {
+						"date": "2023-03-16",
+						"author": "(idiome ancien)",
+						"event": "Étalon rhétorique : mesure le bruit de fond procédurier autour des pics de crise."
+					},
+					"patterns": [
+						"passages? en force",
+						"passer? en force",
+						"passent en force",
+						"passera en force"
+					]
+				}
+			]
+		}
+	]
+}
